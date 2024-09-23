@@ -1,0 +1,68 @@
+.btn {
+  background: linear-gradient(135deg, var(--blue), #6a90e6);
+  padding: 0.55rem 1.75rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  border: 2px solid var(--blue);
+  text-align: center;
+  min-width: 100px;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn::before {
+  content: '';
+  position: absolute;
+  width: 150%;
+  height: 150%;
+  top: -75%;
+  left: -75%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: rotate(45deg);
+  transition: all 0.5s ease;
+}
+
+.btn:hover::before {
+  top: 75%;
+  left: 75%;
+}
+
+.btn:hover {
+  box-shadow: 0 5px 20px rgba(58, 128, 233, 0.6);
+  transform: translateY(-3px);
+  transition: all 0.4s ease;
+}
+
+.btn-outlined {
+  background-color: transparent;
+  padding: 0.55rem 1.75rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: capitalize;
+  cursor: pointer;
+  border: 2px solid var(--blue);
+  color: var(--blue);
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.btn-outlined:hover {
+  background: linear-gradient(135deg, var(--blue), #6a90e6);
+  color: var(--white);
+  box-shadow: 0 5px 20px rgba(58, 128, 233, 0.5);
+}
+
+@media only screen and (max-width: 800px) {
+  .btn,
+  .btn-outlined {
+    font-size: 0.85rem;
+    padding: 0.5rem 1.5rem;
+    min-width: 90px;
+  }
+}

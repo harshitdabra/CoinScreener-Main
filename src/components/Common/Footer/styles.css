@@ -1,0 +1,36 @@
+/* Footer styles */
+.footer {
+  background-color: #1b1b1b;
+  padding: 20px;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-logo {
+  font-size: 24px;
+  cursor: pointer;
+  color: #3a80e9;
+  margin-bottom: 10px;
+}
+
+.footer-logo span {
+  color: #fff;
+}
+
+.footer-contact {
+  margin: 15px 0;
+  font-size: 16px;
+}
+
+.footer-contact a {
+  color: #3a80e9;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
